@@ -1,0 +1,75 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+#word {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+    }
+button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+    transition: 0.3s;
+}
+button:hover {
+    background: #ffcc70;
+    transform: scale(1.05);
+}
+button:disabled {
+    background: #555;
+    color: #999;
+    cursor: not-allowed;
+}
+#hangman-draw {
+    margin-top: 20px;
+}
+canvas {
+    background: #222;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+#message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #ff4b5c;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}   
+#restart:hover {
+    background: #ff1e3c;
+}
