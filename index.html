@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman Game 🎯</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Game 🎯</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hangman Game 🎯</h1>
-    <div id="word"></div>
-    <div id="keyboard"></div>
-    <div id="hangman-draw">
-        <canvas id="canvas" width="200" height="200"></canvas>
-    </div>
-    <div id="message"></div>
-    <button id="restart">Play Again 🔄</button>
+  <h1>Hangman Game 🎯</h1>
+  <div id="word"></div>
+  <button id="hint-btn">Get Hint 💡</button>
+  <div id="hint"></div>
+  
+  <div id="keyboard"></div>
+  <div id="hangman-draw">
+    <canvas id="canvas" width="200" height="200"></canvas>
+  </div>
+  <div id="message"></div>
+  <button id="restart">Play Again 🔄</button>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
